@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harington - Creative Portfolio Theme</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- locomotive -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/apple-touch-icon-precomposed.png" type="image/x-icon">
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- googleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="d-flex flex-column position-relative">
+
+  <!-- preloader starts -->
+
+  <div class="container-fluid p-0 d-block position-fixed bg-black" id="preloaderMain">
+    <div id="preCursor"><span
+        class="text-uppercase text-center text-white fw-semibold d-flex justify-content-center align-items-center">stay
+        relaxed</span></div>
+    <div class="container-fluid p-0 bg-transparent" id="preloadeInner">
+      <div class="loaderOuter container-fluid d-flex flex-column p-0">
+
+        <div
+          class="loaderInner position-relative bg-transparent flex-column d-flex align-items-center justify-content-center">
+
+          <div class="innerHidden w-100 overflow-hidden d-flex justify-content-center align-items-center">
+
+            <ul class="list-unstyled d-flex flex-column w-100 overflow-hidden" id="mainLoaderList">
+              <li class="text-uppercase text-white d-flex justify-content-center loaderList align-items-center">bold
+              </li>
+              <li class="text-uppercase text-white d-flex justify-content-center loaderList align-items-center">brave
+              </li>
+              <li class="text-uppercase text-white d-flex justify-content-center loaderList align-items-center">iconic
+              </li>
+              <li class="text-uppercase text-white d-flex justify-content-center loaderList align-items-center">simple
+              </li>
+              <li class="text-uppercase text-white d-flex justify-content-center loaderList align-items-center">louder
+              </li>
+            </ul>
+          </div>
+          <div class="bottomLoaded w-100 px-5 position-absolute bottom-0 d-flex justify-content-between">
+            <div class="leftLoaded"><span class="text-uppercase text-white fw-normal">loaded</span></div>
+            <div class="leftLoaded p-0 d-flex align-items-center"><span
+                class="text-uppercase text-white fw-normal position-relative" id="percentSpan">1</span></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- preloader ends -->
+
+
+  <!-- main container starts -->
+  <div id="smooth-wrapper">
+    <div id="mainCursor"></div>
+    <div id="smooth-content">
+      <div class="container-fluid p-0 position-relative mainContainer" id="body">
+
+
+
+
+        <!-- navbar starts -->
+
+        <header class="container-fluid p-0 position-fixed top-0 start-0 w-100 px-5" style="z-index: 100;" id="header">
+          <nav class="navbar navbar-expand-lg px-3 w-100 bg-transparent" id="navbar">
+            <div class="container-fluid p-0 my-4 d-flex justify-content-between align-items-center">
+              <a class="navbar-brand p-0 m-0" id="navBrand" href="#"><img src="img/logo.png" id="logoBlack" width="130"
+                  alt=""><img src="img/logo-white.png" id="logoWhite" width="130" alt=""></a>
+
+              <div class="navbar-collapse d-flex justify-content-end align-items-center" id="navbarNav">
+
+                <ul class="navbar-nav d-flex align-items-center h-100" id="navUl">
+                  <div id="navCursor"></div>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="Home" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">Home</span>
+                      </div>
+                    </a>
+
+                    <ul id="homedrop" class="list-unstyled rounded-1 bg-black position-absolute start-0">
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">landing page</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">showcase slider</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">showcase carousel</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">parallax panels</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">archive lists</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">reverse columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="portfolio" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">portfolio</span>
+                      </div>
+                    </a>
+
+                    <ul id="homedrop" class="list-unstyled rounded-1 bg-black position-absolute start-0">
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">spaced metro</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">random parallax</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">ladder grid</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">scaleout thirds</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">classic duo</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">mixed grid</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="about" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">about</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="contact" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">contact</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="stories" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">stories</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="shop" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">shop</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item" id="navItem">
+                    <a href="#" class="nav-link text-uppercase fw-normal text-black position-relative p-0 py-1"
+                      data-hover="more" id="navLink">
+                      <div class="beforeSpan position-relative overflow-hidden">
+                        <span class="navSpan" id="navBarSpan">more</span>
+                      </div>
+                    </a>
+
+                    <ul id="homedrop" class="list-unstyled moreDrop rounded-1 bg-black position-absolute end-0">
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">typography</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">multimedia</a></li>
+                      <li><a href="#" class="text-capitalize text-decoration-none homeAnchor">shortcodes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div id="burgerWrapper">
+                <div class="burgerInner d-flex justify-content-between gap-5 align-items-center" id="burgerInner">
+                  <span class="text-uppercase" id="menuSpan">menu</span>
+                  <label class="burger" for="burger">
+                    <input type="checkbox" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="slideMenu" id="slideMenu">
+                  <div class="slideInner">
+                    <div class="inner overflow-y-scroll">
+                      <ul
+                        class="list-unstyled text-white text-center w-50 m-auto d-flex flex-column justify-content-center align-items-center"
+                        id="sideUl">
+                        <li
+                          class="home home1 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                          aria-expanded="false" aria-controls="flush-collapseOne"><a href="#"
+                            class="text-decoration-none text-white">Home</a>
+                          <ul
+                            class="list-unstyled rounded-1 bg-transparent mb-2 text-center accordion-collapse collapse"
+                            id="flush-collapseOne">
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">landing page</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">showcase slider</a>
+                            </li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">showcase carousel</a>
+                            </li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">parallax panels</a>
+                            </li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">archive lists</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">reverse columns</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          class="home home2 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false" aria-controls="flush-collapseTwo"><a href="#"
+                            class="text-decoration-none text-white">Portfolio</a>
+                          <ul
+                            class="list-unstyled rounded-1 bg-transparent mb-2 text-center accordion-collapse collapse"
+                            id="flush-collapseTwo">
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">spaced metro</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">random parallax</a>
+                            </li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">ladder grid</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">scaleout thirds</a>
+                            </li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">classic duo</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">mixed grid</a></li>
+                          </ul>
+                        </li>
+
+                        <li
+                          class="home home3 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button"><a href="#" class="text-decoration-none text-white">about</a></li>
+
+                        <li
+                          class="home home4 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button"><a href="#" class="text-decoration-none text-white">contact</a></li>
+
+                        <li
+                          class="home home5 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button"><a href="#" class="text-decoration-none text-white">stories</a></li>
+
+                        <li
+                          class="home home6 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button"><a href="#" class="text-decoration-none text-white">shop</a></li>
+
+
+                        <li
+                          class="home home7 text-uppercase accordion-button d-flex collapsed flex-column align-items-center justify-content-center"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                          aria-expanded="false" aria-controls="flush-collapseSeven"><a href="#"
+                            class="text-decoration-none text-white">more</a>
+                          <ul
+                            class="list-unstyled rounded-1 bg-transparent mb-2 text-center accordion-collapse collapse"
+                            id="flush-collapseSeven">
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">typography</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">multimedia</a></li>
+                            <li class="slideListItem d-flex justify-content-center align-items-center"><a href="#"
+                                class="fw-normal text-decoration-none text-uppercase homeAnchor">shortcodes</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!-- navbar ends -->
+
+
+        <!-- hero starts -->
+        <section class="heroSection container-fluid p-0 mb-3 px-5" id="heroSection">
+          <div id="heroCursor"></div>
+          <div class="container-fluid d-flex justify-content-center align-items-end h-100 p-0 h-75 pt-5" id="heroMain">
+            <div class="container-fluid p-0 px-1 d-flex flex-column justify-content-center position-relative h-100">
+              <div class="container-fluid content d-flex flex-column justify-content-start" id="heroInner">
+                <span class="overflow-hidden"><span class="text-uppercase mb-0 lh-1 contentSpan"
+                    id="contentSpan">digital</span></span>
+                <span class="overflow-hidden"><span class="text-uppercase mb-0 lh-1 contentSpan"
+                    id="contentSpan">creative</span></span>
+
+
+                <span class="overflow-hidden">
+                  <span class="d-flex align-items-center contentSpan" id="contentSpan">
+                    <p class="me-5 mb-2 text-uppercase paraJust mb-0 pe-3" id="paraJust" style="width: 25%;">Just a
+                      design
+                      and
+                      strategy agency with an adaptive
+                      approach to problem solving.</p><span class="text-uppercase mb-0 lh-1"
+                      id="contentSpan">studio</span>
+                  </span>
+                </span>
+
+              </div>
+              <div class="scroll d-flex align-items-center px-3 justify-content-between w-100 pt-5">
+
+                <div class="d-flex align-items-center justify-content-between" id="scrollMain">
+                  <div id="scrollOuter" class="scrollO">
+                    <div id="scrollInner" class="position-relative" data-span="scroll to explore">
+                      <div id="scrollBase" class="text-uppercase position-relative">
+                        <span id="scrollSpan" class="opacity-75 scrollFont">scroll to explore</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span id="arrow" class="ms-3 scrollFont"><svg class="opacity-75 scrollFont"
+                      xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="15" height="15" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                      xml:space="preserve" class="">
+                      <g>
+                        <path
+                          d="M512 479V92.1c0-18.2-14.8-33-33-33s-33 14.8-33 33v307.1L56.4 9.7C43.5-3.2 22.6-3.2 9.7 9.7s-12.9 33.8 0 46.7l389.6 389.5H92.1c-18.2 0-33 14.8-33 33s14.8 33 33 33H479c18.2.1 33-14.7 33-32.9z"
+                          fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                      </g>
+                    </svg></span>
+                </div>
+
+                <span class="text-uppercase opacity-50 scrollFont">selected case studies (04)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hero ends -->
+
+
+        <!-- expand section starts -->
+        <section id="clickToExpand" class="container-fluid p-0 mb-5 px-5 position-relative">
+          <div class="container-fluid p-0 position-relative m-0 w-100" id="expandImgInner">
+            <div class="container-fluid exOuter position-relative p-0 d-flex justify-content-center align-items-center"
+              data-aos="fade-up" data-aos-delay="400" id="exOuter">
+
+              <div class="expandInner container-fluid w-100 d-flex gap-3 p-0 justify-content-center align-items-center"
+                id="expandInner">
+                <div class="expandImage" id="expandImage">
+                  <div class="exInner h-100 overflow-hidden" id="exOne">
+                    <img src="img/01hero.jpg" alt="">
+                  </div>
+                  <div class="exparaMain d-flex gap-1 mt-3 flex-column align-items-start" id="exparaMain">
+                    <p id="exPara" class="m-0 text-uppercase fw-medium fs-5">london royal theatre</p>
+                    <span id="exSpan" class="text-uppercase"
+                      style="font-weight: 100 !important; color: rgba(128, 128, 128, 0.541);">Brand identity</span>
+                  </div>
+                </div>
+
+
+                <div class="expandImage" id="expandImage">
+                  <div class="exInner h-100 overflow-hidden" id="exTwo">
+                    <img src="img/02hero.jpg" alt="">
+                  </div>
+                  <div class="exparaMain d-flex gap-1 mt-3 flex-column align-items-start" id="exparaMain">
+                    <p id="exPara" class="m-0 text-uppercase fw-medium fs-5">font porlane</p>
+                    <span id="exSpan" class="text-uppercase"
+                      style="font-weight: 100 !important; color: rgba(128, 128, 128, 0.541);">graphic design</span>
+                  </div>
+                </div>
+
+
+                <div class="expandImage" id="expandImage">
+
+                  <div class="exInner h-100 overflow-hidden" id="exThree">
+                    <img src="img/03hero.jpg" alt="">
+                  </div>
+                  <div class="exparaMain d-flex gap-1 mt-3 flex-column align-items-start" id="exparaMain">
+                    <p id="exPara" class="m-0 text-uppercase fw-medium fs-5">moon purple dust</p>
+                    <span id="exSpan" class="text-uppercase"
+                      style="font-weight: 100 !important; color: rgba(128, 128, 128, 0.541);">photography</span>
+                  </div>
+
+                </div>
+
+
+                <div class="expandImage" id="expandImage">
+                  <div class="exInner h-100 overflow-hidden" id="exFour">
+                    <img src="img/04hero.jpg" alt="">
+                  </div>
+                  <div class="exparaMain d-flex gap-1 mt-3 flex-column align-items-start" id="exparaMain">
+                    <p id="exPara" class="m-0 text-uppercase fw-medium fs-5">listen everything</p>
+                    <span id="exSpan" class="text-uppercase"
+                      style="font-weight: 100 !important; color: rgba(128, 128, 128, 0.541);">3D animation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- expand section starts -->
+
+
+
+
+
+        <!-- business starts -->
+
+        <div class="container-fluid py-5 p-0" id="bisHero">
+          <div
+            class="head container-fluid py-5 my-5 text-center position-relative d-flex justify-content-center align-items-center">
+
+            <div class="head1 container-fluid">
+              <h1 class="fw-light text-uppercase text-center mb-0" id="heading" style="color: rgb(34,34,34);">we
+                help <span class="text-decoration-none bisAnchor position-relative" style="color: rgb(34,34,34);"
+                  id="bisAnchorBis">businesses</span> to <br>
+                innovate and remain highly <br> relevant to their <span
+                  class="text-decoration-none bisAnchor position-relative" style="color: rgb(34,34,34);"
+                  id="bisAnchorCus">customers</span> <br> by developing edge digital <br> products</h1>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- business ends -->
+
+        <!-- challenge section starts -->
+
+        <section class="container-fluid p-0 px-5">
+          <div class="container-fluid col-xxl-12 px-5 py-5 d-flex flex-column align-items-start gap-5 m-0"
+            id="challengeHero">
+            <div class="row align-items-center w-100">
+              <div class="col-10 col-sm-8 col-lg-6" id="empty">
+              </div>
+              <div class="col-lg-6 px-0 spanHead pe-5" id="spanHead">
+
+                <div class="spanMain position-relative">
+                  <h5 class="text-uppercase mb-4 opacity-25">the challenge</h5>
+                  <h5 class="text-uppercase mb-4 upper position-absolute top-0">the challenge</h5>
+                </div>
+
+
+                <p style="font-size: 18px; color: #6d6d6d; line-height: 25px; font-weight: 200 !important;"
+                  data-aos="fade-up">There are many variations of passages of Lorem Ipsum available, but the majority
+                  have suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                  slightly believable. If you are going to use a passage of Lorem Ipsum.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row align-items-center w-100">
+              <div class="col-10 col-sm-8 col-lg-6" id="empty">
+              </div>
+              <div class="col-lg-6 px-0 spanHead pe-5" id="spanHead">
+
+                <div class="spanMain position-relative">
+                  <h5 class="text-uppercase mb-4 opacity-25">the approach</h5>
+                  <h5 class="text-uppercase mb-4 upper upper2 position-absolute top-0">the approach</h5>
+                </div>
+
+
+                <p style="font-size: 18px; color: #6d6d6d; line-height: 25px; font-weight: 200 !important;"
+                  data-aos="fade-up">You need to be sure there isn’t anything embarrassing hidden in the middle of text.
+                  All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+                  this the first true generator on the Internet. It uses a dictionary with Latin words.
+                </p>
+              </div>
+            </div>
+
+
+
+
+            <div class="scroll d-flex align-items-center justify-content-start w-100">
+
+              <div class="d-flex align-items-center" id="scrollMain">
+                <div id="scrollOuter">
+                  <div id="scrollInner" class="position-relative" data-span="read about us">
+                    <div id="scrollBase" class="text-uppercase position-relative">
+                      <span id="scrollSpan" class="opacity-75 scrollFont">read about us</span>
+                    </div>
+                  </div>
+                </div>
+
+                <span id="arrow" class="ms-3 scrollFont"><svg class="opacity-75 scrollFont"
+                    xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="15" height="15" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="">
+                    <g>
+                      <path
+                        d="M512 479V92.1c0-18.2-14.8-33-33-33s-33 14.8-33 33v307.1L56.4 9.7C43.5-3.2 22.6-3.2 9.7 9.7s-12.9 33.8 0 46.7l389.6 389.5H92.1c-18.2 0-33 14.8-33 33s14.8 33 33 33H479c18.2.1 33-14.7 33-32.9z"
+                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                  </svg></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- challenge section ends -->
+
+
+
+        <!-- parallax starts -->
+
+        <section class="container-fluid p-0 d-flex justify-content-center align-items-center" id="parallaxHero">
+          <div class="text-center">
+            <h1 class="display-5 fw-medium text-white text-uppercase" id="awHead">awarded international digital studio
+            </h1>
+          </div>
+        </section>
+
+        <!-- parallax ends -->
+
+
+
+        <!-- read the news starts -->
+
+        <section class="container-fluid p-0 px-5 pt-5 mt-5" id="readMain">
+          <div class="container-fluid px-3">
+            <span class="text-uppercase fw-lighter">/&nbsp;get informed</span>
+            <div class="container-fluid px-0 py-5" id="featured-3">
+
+
+              <div class="spanMain position-relative read">
+                <h5 class="text-uppercase readhead display-1 lh-1 opacity-25">Read</h5>
+                <h5 class="text-uppercase readhead display-1 lh-1 upper position-absolute top-0">Read</h5>
+              </div>
+              <div class="spanMain position-relative read">
+                <h5 class="text-uppercase readhead display-1 lh-1 mb-4 opacity-25">all news</h5>
+                <h5 class="text-uppercase readhead display-1 lh-1 mb-4 upper upper2 position-absolute top-0">all news
+                </h5>
+              </div>
+
+
+
+              <div class="row px-3 pt-5 row-cols-1 row-cols-lg-1">
+
+
+                <!-- feature one starts -->
+                <div class="feature col-12 d-flex align-items-center" id="featureCard">
+                  <div class="left col-9 d-flex justify-content-start align-items-center" id="left">
+                    <div class="featureImage" id="featureImage">
+                      <img src="http://clapat-themes.com/wordpress/harington/wp-content/uploads/2022/12/7.jpg"
+                        width="200" class="img-fluid" alt="">
+                    </div>
+                    <div class="featureTitle">
+                      <div class="spanMain position-relative read">
+                        <h5 class="text-uppercase featureTitleHeading display-6 opacity-25">blue ocean waves</h5>
+                        <h5 class="text-uppercase featureTitleHeading display-6 upper position-absolute top-0">blue
+                          ocean waves</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featureDetails flex-column d-flex justify-content-center align-items-start col-3">
+                    <div class="container p-0">
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="nature">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">nature</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="mx-2">/</span>
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="travel">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">travel</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center justify-content-start" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="April 14, 2024">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">April 14, 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- feature one ends -->
+
+
+
+                <!-- feature two starts -->
+                <div class="feature col-12 d-flex align-items-center" id="featureCard">
+                  <div class="left col-9 d-flex justify-content-start align-items-center" id="left">
+                    <div class="featureImage" id="featureImage">
+                      <img src="http://clapat-themes.com/wordpress/harington/wp-content/uploads/2022/12/8.jpg"
+                        width="200" class="img-fluid" alt="">
+                    </div>
+                    <div class="featureTitle">
+                      <div class="spanMain position-relative read">
+                        <h5 class="text-uppercase featureTitleHeading display-6 opacity-25">desert treasure hunt</h5>
+                        <h5 class="text-uppercase featureTitleHeading display-6 upper position-absolute top-0">desert
+                          treasure hunt</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="featureDetails flex-column d-flex justify-content-center align-items-start col-3">
+                    <div class="container p-0">
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="nature">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">nature</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="mx-2">/</span>
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="uncategorized">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">uncategorized</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center justify-content-start" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="April 14, 2024">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">April 14, 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- feature two ends -->
+
+
+
+
+                <!-- feature three starts -->
+                <div class="feature col-12 d-flex align-items-center" style="border-bottom: 1px solid #CBCBCB;"
+                  id="featureCard">
+                  <div class="left col-9 d-flex justify-content-start align-items-center" id="left">
+                    <div class="featureImage" id="featureImage">
+                      <img src="http://clapat-themes.com/wordpress/harington/wp-content/uploads/2022/12/1.jpg"
+                        width="200" class="img-fluid" alt="">
+                    </div>
+                    <div class="featureTitle">
+                      <div class="spanMain position-relative read">
+                        <h5 class="text-uppercase featureTitleHeading display-6 opacity-25">birds eye shots</h5>
+                        <h5 class="text-uppercase featureTitleHeading display-6 upper position-absolute top-0">birds eye
+                          shots</h5>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="featureDetails flex-column d-flex justify-content-center align-items-start col-3">
+                    <div class="container p-0">
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="sport">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">sport</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="mx-2">/</span>
+                        <div class="d-flex align-items-center" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="travel">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">travel</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="scroll d-flex align-items-center justify-content-start">
+                        <div class="d-flex align-items-center justify-content-start" id="scrollMain">
+                          <div id="scrollOuter">
+                            <div id="scrollInner" class="position-relative" data-span="April 14, 2024">
+                              <div id="scrollBase" class="text-uppercase position-relative">
+                                <span id="scrollSpan" class="opacity-75 scrollFont">April 14, 2024</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- feature three ends -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- read the news ends -->
+
+
+
+
+        <!-- read blog starts -->
+
+        <section class="container-fluid px-5 py-5 pt-0" id="readBlog">
+          <div class="container col-xxl-8 px-4 ms-0 ps-3" id="readBlogInner">
+            <div class="row flex-lg-row-reverse align-items-center">
+              <div class="col-10 col-sm-8 col-lg-7"></div>
+
+              <div class="col-lg-5">
+                <p class="lead text-uppercase mb-5" style="font-size: calc(1rem + 0.30vw); line-height: 25px;">we help
+                  businesses to innovate and remain highly relevant to their customers by developing edge digital
+                  creative products</p>
+                <div class="d-flex align-items-center my-5 pt-3" id="scrollMain">
+                  <div id="scrollOuter" class="rounded-pill"
+                    style="background-color: #222222; color: white; padding: 0.5rem 2rem;">
+                    <div id="scrollInner" class="position-relative" data-span="read blog">
+                      <div id="scrollBase" class="text-uppercase position-relative">
+                        <span id="scrollSpan" class="scrollFont text-white">read blog</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- read blog ends -->
+
+
+
+
+        <!-- marquee starts -->
+
+        <section
+          class="container-fluid px-0 overflow-hidden d-inline-flex align-items-center flex-shrink-0 rightToLeftOuter"
+          id="rightToLeft">
+          <span class="text-uppercase fw-medium d-inline-block rightToLeft"
+            id="right-to-left-heading">creative&nbsp;studio&nbsp;design&nbsp;</span>
+          <span class="text-uppercase fw-medium d-inline-block rightToLeft2"
+            id="right-to-left-heading">creative&nbsp;studio&nbsp;design&nbsp;</span>
+        </section>
+
+        <!-- marquee ends -->
+
+
+        <!-- work together starts -->
+
+        <section class="container-fluid px-5 py-3" id="readBlog">
+          <div class="container col-xxl-8 px-4 ms-0 ps-3">
+            <div class="row flex-lg-row-reverse align-items-center">
+              <div class="col-10 col-sm-8 col-lg-7"></div>
+
+              <div class="col-lg-5">
+                <p class="lead text-uppercase" style="font-size: calc(1rem + 0.30vw);">we would love to hear from you.
+                  <br> let's work together
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- work together ends -->
+
+
+
+
+        <!-- footer starts -->
+
+        <div class="container-fluid px-5 p-0">
+          <div class="container-fluid">
+            <footer class="d-flex justify-content-between align-items-center py-3 my-4 ">
+
+              <a href="#" class="text-decoration-none col-4">
+                <div class="scroll d-flex align-items-center gap-4 justify-content-start">
+
+
+                  <span id="arrow" class="ps-0 scrollFont">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="15" height="15" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                      xml:space="preserve" class="">
+                      <g>
+                        <path
+                          d="M479 0H92.1c-18.2 0-33 14.8-33 33s14.8 33 33 33h307.1L9.7 455.6c-12.9 12.9-12.9 33.8 0 46.7s33.8 12.9 46.7 0l389.5-389.6v307.1c0 18.2 14.8 33 33 33s33-14.8 33-33V33C512 14.8 497.2 0 479 0z"
+                          fill="#000000" opacity="1" data-original="#222222" class=""></path>
+                      </g>
+                    </svg>
+                  </span>
+
+                  <div class="d-flex align-items-center" id="scrollMain">
+                    <div id="scrollOuter">
+                      <div id="scrollInner" class="position-relative scrollInner2" data-span="back to top">
+                        <div id="scrollBase" class="text-uppercase position-relative">
+                          <span id="scrollSpan" class="scrollFont">back to top</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+
+              <a href="/" style="font-size: 1vw;"
+                class="col-4 d-flex fw-lighter align-items-center justify-content-center text-uppercase mb-3 mb-md-0 text-black text-decoration-none">
+                <span class="text-uppercase me-2 position-relative" id="clamp">clamp themes</span> &copy; 2024
+              </a>
+
+              <ul class="nav col-4 justify-content-end">
+                <li class="nav-item d-flex align-items-end justify-content-center flex-column" style="font-size: 1vw;"
+                  id="footerList">
+                  <a class="nav-link px-0 text-body-secondary gap-3 d-flex align-items-center justify-content-end"
+                    id="followUs">
+                    <span class="text-uppercase d-flex align-items-center me-2">follow us</span>
+                    <span class="mb-1" id="shareSvg">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="15" height="15" x="0" y="0" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                          <path
+                            d="M406 332c-29.641 0-55.761 14.581-72.167 36.755L191.99 296.124c2.355-8.027 4.01-16.346 4.01-25.124 0-11.906-2.441-23.225-6.658-33.636l148.445-89.328C354.307 167.424 378.589 180 406 180c49.629 0 90-40.371 90-90S455.629 0 406 0s-90 40.371-90 90c0 11.437 2.355 22.286 6.262 32.358l-148.887 89.59C156.869 193.136 132.937 181 106 181c-49.629 0-90 40.371-90 90s40.371 90 90 90c30.13 0 56.691-15.009 73.035-37.806l141.376 72.395C317.807 403.995 316 412.75 316 422c0 49.629 40.371 90 90 90s90-40.371 90-90-40.371-90-90-90z"
+                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+
+                  <div class="" id="social">
+                    <ul class="list-unstyled d-flex align-items-center justify-content-between gap-2">
+                      <li class="p-3 pt-1 footLi"><a id="footAnchor" target="_blank"
+                          href="https://www.instagram.com/clapat.themes/" class="text-decoration-none">In</a></li>
+                      <li class="p-3 pt-1 footLi"><a id="footAnchor" target="_blank"
+                          href="https://www.facebook.com/clapat.ro" class="text-decoration-none">Fb</a></li>
+                      <li class="p-3 pt-1 footLi"><a id="footAnchor" target="_blank"
+                          href="https://auth.services.adobe.com/en_US/deeplink.html#/password"
+                          class="text-decoration-none">Be</a></li>
+                      <li class="p-3 pt-1 footLi"><a id="footAnchor" target="_blank"
+                          href="https://twitter.com/clapatdesign/" class="text-decoration-none">Tw</a></li>
+                      <li class="p-3 pt-1 footLi"><a id="footAnchor" target="_blank" href="https://dribbble.com/clapat/"
+                          class="text-decoration-none">Db</a></li>
+                    </ul>
+                  </div>
+
+                </li>
+              </ul>
+
+            </footer>
+          </div>
+        </div>
+
+        <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- main container ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.js"
+    integrity="sha512-2U47rITq8EUWZ484d8W3ZdXUzqIOfALVTBw9zoRZ6aKQxIaNsPYSDDwzGSlRxQ/8RsCxr+LrQrw5rvXoWirgTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js.map"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+
+
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease'
+    });
+
+    // const scroll = new LocomotiveScroll({
+    //   el: document.querySelector('#body'),
+    //   smooth: true,
+    // });
+
+  </script>
+
+
+
+</body>
+
+</html>
